@@ -4,12 +4,12 @@ import { useState } from "react";
 
 const Dictionary = () => {
   const [word, setWord] = useState();
-  const [realWord, setRealWord] = useState("Word");
-  const [phonetic, setPhonetic] = useState("kJDij");
+  const [realWord, setRealWord] = useState("a");
+  const [phonetic, setPhonetic] = useState("kJD:j//");
   const [posp, setPosp] = useState("adj");
-  const [meaning1, setMeaning1] = useState();
-  const [meaning2, setMeaning2] = useState();
-  const [meaning3, setMeaning3] = useState("three");
+  const [meaning1, setMeaning1] = useState("Meaning 1");
+  const [meaning2, setMeaning2] = useState("Meaning 2");
+  const [meaning3, setMeaning3] = useState("Meaning 3");
 
   const updateValue = (e) => {
     const value = e.target.value;
@@ -29,7 +29,7 @@ const Dictionary = () => {
           } else setPhonetic(data[0].phonetics[i].text);
         }
 
-        setPosp(data[1].meanings[0].partOfSpeech);
+        setPosp(data[0].meanings[0].partOfSpeech);
         setMeaning1(data[0].meanings[0].definitions[0].definition);
         setMeaning2(data[0].meanings[0].definitions[1].definition);
         setMeaning3(data[0].meanings[0].definitions[2].definition);
@@ -47,7 +47,7 @@ const Dictionary = () => {
           onChange={updateValue}
         />
         <button className="search-btn" onClick={fetchData}>
-          Search
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
 

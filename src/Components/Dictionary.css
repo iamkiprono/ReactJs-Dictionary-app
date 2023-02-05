@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
-    background: rgb(146, 140, 59);
+body {
+    background: linear-gradient(to right,rgb(146, 139, 139), rgb(170, 170, 56));
 }
 
 .dictionary {
@@ -23,6 +25,11 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+input {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
 
 .search-bar input,
 .search-btn {
@@ -30,27 +37,34 @@ body{
   outline: none;
   background: rgb(247, 245, 245);
 }
+.search-btn {
+  cursor: pointer;
+}
+.search-btn .fa-sharp{
+ padding: 0 20px;
+   
+} 
 
-.word{
-    margin-top: 40px;
+.word {
+  margin-top: 40px;
 }
-.pronounce{
-    margin-top: 10px;
+.pronounce {
+  margin-top: 10px;
 }
-.typeofword{
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.meaning{
-    margin-top: 40px;
-}
-.meanings{
-    margin-top: 20px;
+.typeofword {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
-@media (max-width: 800px){
-    .dictionary{
-        width: 80%;
-    }
+.meaning {
+  margin-top: 40px;
+}
+.meanings {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .dictionary {
+    width: 80%;
+  }
 }
