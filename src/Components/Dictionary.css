@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body{
+    background: rgb(146, 140, 59);
+}
+
+.dictionary {
+  width: 70%;
+  margin: auto;
+}
+.search-bar {
+  width: 100%;
+  background: rgb(247, 245, 245);
+
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar input,
+.search-btn {
+  border: none;
+  outline: none;
+  background: rgb(247, 245, 245);
+}
+
+.word{
+    margin-top: 40px;
+}
+.pronounce{
+    margin-top: 10px;
+}
+.typeofword{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.meaning{
+    margin-top: 40px;
+}
+.meanings{
+    margin-top: 20px;
+}
+
+@media (max-width: 800px){
+    .dictionary{
+        width: 80%;
+    }
+}
